@@ -25,11 +25,13 @@ def generate_launch_description():
     )
 
     # 3. Gazebo 启动文件
+    world_path = os.path.join(pkg_path, 'worlds', 'obstacle_world.world')
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
+        launch_arguments={'world': world_path}.items() # 这里指定 world
     )
-
+    
     # 4. Spawn Entity 节点
     spawn_entity = Node(
         package='gazebo_ros',
