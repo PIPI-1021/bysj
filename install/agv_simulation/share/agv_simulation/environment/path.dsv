@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/lyq/bysj_ws/build/agv_simulation/ament_cmake_environment_hooks/path.dsv

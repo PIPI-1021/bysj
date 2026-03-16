@@ -1,2 +1,0 @@
-Invoking command in '/home/lyq/bysj_ws/build/agv_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lyq/bysj_ws/build/agv_simulation -- -j2 -l2
-Invoked command in '/home/lyq/bysj_ws/build/agv_simulation' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lyq/bysj_ws/build/agv_simulation -- -j2 -l2

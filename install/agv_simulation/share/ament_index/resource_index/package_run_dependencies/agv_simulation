@@ -1,1 +1,1 @@
-rclcpp;sensor_msgs;nav_msgs;geometry_msgs;tf2;tf2_ros;pcl_ros;pcl_conversions;libpcl-all-dev;gazebo_ros_pkgs;pcl_msgs;tf2_sensor_msgs
+/home/lyq/bysj_ws/build/agv_simulation/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/agv_simulation

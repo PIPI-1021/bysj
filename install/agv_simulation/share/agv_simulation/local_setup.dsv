@@ -1,2 +1,1 @@
-source;share/agv_simulation/environment/ament_prefix_path.sh
-source;share/agv_simulation/environment/path.sh
+/home/lyq/bysj_ws/build/agv_simulation/ament_cmake_environment_hooks/local_setup.dsv
