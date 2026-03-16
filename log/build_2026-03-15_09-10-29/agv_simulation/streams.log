@@ -1,0 +1,38 @@
+[0.012s] Invoking command in '/home/lyq/bysj_ws/build/agv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lyq/bysj_ws/build/agv_simulation --target install -- -j2 -l2
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target ground_filter_node[0m
+[0.068s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_fusion_node[0m
+[0.109s] [ 50%] Built target ground_filter_node
+[0.110s] [100%] Built target pointcloud_fusion_node
+[0.131s] [36mInstall the project...[0m
+[0.141s] -- Install configuration: ""
+[0.141s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description
+[0.141s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description/inertial_macros.xacro
+[0.141s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description/robot.urdf.xacro
+[0.142s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch
+[0.142s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/sim_perception.launch.py
+[0.142s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/agv_nav_full.launch.py
+[0.142s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/rsp.launch.py
+[0.142s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/worlds
+[0.142s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/worlds/simulation.world
+[0.143s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config
+[0.143s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/mapper_params_online_async.yaml
+[0.143s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/slam_config.rviz
+[0.143s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/ekf.yaml
+[0.143s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/ground_filter_node
+[0.144s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/pointcloud_fusion_node
+[0.144s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/package_run_dependencies/agv_simulation
+[0.144s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/parent_prefix_path/agv_simulation
+[0.145s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.sh
+[0.145s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.dsv
+[0.145s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.sh
+[0.145s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.dsv
+[0.145s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.bash
+[0.145s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.sh
+[0.145s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.zsh
+[0.146s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.dsv
+[0.147s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.dsv
+[0.147s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/packages/agv_simulation
+[0.148s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig.cmake
+[0.148s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig-version.cmake
+[0.148s] -- Up-to-date: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.xml
+[0.150s] Invoked command in '/home/lyq/bysj_ws/build/agv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lyq/bysj_ws/build/agv_simulation --target install -- -j2 -l2

@@ -1,0 +1,25 @@
+slam_toolbox:
+  ros__parameters:
+    # 坐标系定义
+    [cite_start]odom_frame: odom        # 必须与 EKF 配置的 odom_frame 一致 [cite: 13]
+    map_frame: map
+    base_frame: base_link
+    scan_topic: /scan
+    use_sim_time: True
+
+    # 稳定性重写
+    [cite_start]minimum_time_interval: 0.2  # 提高到 5Hz 处理，平衡实时性与精度 [cite: 17]
+    [cite_start]min_score: 0.6               # 略微调高门槛，增强在行人走动时的鲁棒性 [cite: 4]
+    
+    # 距离参数
+    [cite_start]max_laser_range: 10.0        # 信任 10 米内数据，给动态预测留出更多视野 [cite: 15]
+    minimum_travel_distance: 0.2 # 增加位移触发，减少小车静止时的地图抖动
+    minimum_travel_heading: 0.2  # 约 11.4 度
+
+    # 地图精细度
+    [cite_start]resolution: 0.05             # 5厘米分辨率，平衡 AGX Orin 算力 [cite: 10]
+    mode: mapping
+
+    # 闭环检测 (Loop Closure) - 针对大场景室内环境
+    do_loop_closing: true
+    info_graph_publisher_period: 5.0

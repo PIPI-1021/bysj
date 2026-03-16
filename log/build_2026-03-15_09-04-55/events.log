@@ -1,0 +1,335 @@
+[0.000000] (-) TimerEvent: {}
+[0.000509] (agv_simulation) JobQueued: {'identifier': 'agv_simulation', 'dependencies': OrderedDict()}
+[0.000558] (agv_simulation) JobStarted: {'identifier': 'agv_simulation'}
+[0.008198] (agv_simulation) JobProgress: {'identifier': 'agv_simulation', 'progress': 'cmake'}
+[0.008593] (agv_simulation) Command: {'cmd': ['/usr/bin/cmake', '/home/lyq/bysj_ws/src/agv_simulation', '-DCMAKE_INSTALL_PREFIX=/home/lyq/bysj_ws/install/agv_simulation'], 'cwd': '/home/lyq/bysj_ws/build/agv_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'lyq'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lyq'), ('OLDPWD', '/home/lyq/bysj_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1280'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e48f74c71cd2561997e717ac69b63d42'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lyq/bysj_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lyq'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lyq'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/617:@/tmp/.ICE-unix/1280,unix/617:/tmp/.ICE-unix/1280'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f5bb36b2_8744_4c85_88f2_9c0000f90f9b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KWODM3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.403'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lyq/bysj_ws/install/agv_simulation:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GALLIUM_DRIVER', 'llvmpipe'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lyq/bysj_ws/build/agv_simulation'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e48f74c71cd2561997e717ac69b63d42'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lyq/bysj_ws/install/agv_simulation:/opt/ros/humble')]), 'shell': False}
+[0.070927] (agv_simulation) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099275] (-) TimerEvent: {}
+[0.126219] (agv_simulation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.136896] (agv_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199449] (-) TimerEvent: {}
+[0.210793] (agv_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.214465] (agv_simulation) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.214984] (agv_simulation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.216005] (agv_simulation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.222367] (agv_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.297658] (agv_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.299612] (-) TimerEvent: {}
+[0.302932] (agv_simulation) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.303198] (agv_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.303548] (agv_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.306395] (agv_simulation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.400201] (-) TimerEvent: {}
+[0.436126] (agv_simulation) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.500362] (-) TimerEvent: {}
+[0.524918] (agv_simulation) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.568452] (agv_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.573773] (agv_simulation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.583563] (agv_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.598179] (agv_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600602] (-) TimerEvent: {}
+[0.613790] (agv_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.660845] (agv_simulation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.663893] (agv_simulation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.701164] (-) TimerEvent: {}
+[0.759539] (agv_simulation) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.785977] (agv_simulation) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.802038] (-) TimerEvent: {}
+[0.828045] (agv_simulation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.841243] (agv_simulation) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.902382] (-) TimerEvent: {}
+[0.914931] (agv_simulation) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.915106] (agv_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.994256] (agv_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.995306] (agv_simulation) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.002658] (-) TimerEvent: {}
+[1.050735] (agv_simulation) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.083660] (agv_simulation) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.102899] (-) TimerEvent: {}
+[1.124865] (agv_simulation) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.141307] (agv_simulation) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.183429] (agv_simulation) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[1.183702] (agv_simulation) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.203729] (-) TimerEvent: {}
+[1.222791] (agv_simulation) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.240336] (agv_simulation) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.283969] (agv_simulation) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.284322] (agv_simulation) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.304084] (-) TimerEvent: {}
+[1.406655] (-) TimerEvent: {}
+[1.509541] (-) TimerEvent: {}
+[1.610272] (-) TimerEvent: {}
+[1.710980] (-) TimerEvent: {}
+[1.812063] (-) TimerEvent: {}
+[1.912742] (-) TimerEvent: {}
+[2.015591] (-) TimerEvent: {}
+[2.116034] (-) TimerEvent: {}
+[2.217089] (-) TimerEvent: {}
+[2.241001] (agv_simulation) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[2.257028] (agv_simulation) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[2.293491] (agv_simulation) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[2.294515] (agv_simulation) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.317466] (-) TimerEvent: {}
+[2.360499] (agv_simulation) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.417838] (-) TimerEvent: {}
+[2.487772] (agv_simulation) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[2.493565] (agv_simulation) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.500310] (agv_simulation) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.518323] (-) TimerEvent: {}
+[2.619462] (-) TimerEvent: {}
+[2.628093] (agv_simulation) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.720421] (-) TimerEvent: {}
+[2.758736] (agv_simulation) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.821019] (-) TimerEvent: {}
+[2.880787] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.881688] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.882359] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.883040] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.883722] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.884402] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.884721] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.885019] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.885715] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.886457] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.887182] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.887851] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.888841] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.889613] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.890323] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.891079] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.891827] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.892555] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.893344] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.894040] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.894648] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[2.894911] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[2.895232] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[2.895986] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.896714] (agv_simulation) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.899743] (agv_simulation) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[2.921273] (-) TimerEvent: {}
+[2.932245] (agv_simulation) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.933299] (agv_simulation) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.933425] (agv_simulation) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.013826] (agv_simulation) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:14 (find_package):\n'}
+[3.014060] (agv_simulation) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[3.014132] (agv_simulation) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[3.014191] (agv_simulation) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[3.014245] (agv_simulation) StderrLine: {'line': b'\n'}
+[3.014298] (agv_simulation) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[3.014352] (agv_simulation) StderrLine: {'line': b'\n'}
+[3.014403] (agv_simulation) StderrLine: {'line': b'    /usr\n'}
+[3.014467] (agv_simulation) StderrLine: {'line': b'\n'}
+[3.014518] (agv_simulation) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[3.014602] (agv_simulation) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[3.014740] (agv_simulation) StderrLine: {'line': b'\x1b[0m\n'}
+[3.021865] (-) TimerEvent: {}
+[3.023767] (agv_simulation) StdoutLine: {'line': b'-- Found tf2_sensor_msgs: 0.25.19 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)\n'}
+[3.095850] (agv_simulation) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.122282] (-) TimerEvent: {}
+[3.168624] (agv_simulation) StdoutLine: {'line': b'-- Generating done\n'}
+[3.191470] (agv_simulation) StdoutLine: {'line': b'-- Build files have been written to: /home/lyq/bysj_ws/build/agv_simulation\n'}
+[3.210629] (agv_simulation) CommandEnded: {'returncode': 0}
+[3.211361] (agv_simulation) JobProgress: {'identifier': 'agv_simulation', 'progress': 'build'}
+[3.212802] (agv_simulation) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lyq/bysj_ws/build/agv_simulation', '--', '-j2', '-l2'], 'cwd': '/home/lyq/bysj_ws/build/agv_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'lyq'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lyq'), ('OLDPWD', '/home/lyq/bysj_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1280'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e48f74c71cd2561997e717ac69b63d42'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lyq/bysj_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lyq'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lyq'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/617:@/tmp/.ICE-unix/1280,unix/617:/tmp/.ICE-unix/1280'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f5bb36b2_8744_4c85_88f2_9c0000f90f9b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KWODM3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.403'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lyq/bysj_ws/install/agv_simulation:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GALLIUM_DRIVER', 'llvmpipe'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lyq/bysj_ws/build/agv_simulation'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e48f74c71cd2561997e717ac69b63d42'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lyq/bysj_ws/install/agv_simulation:/opt/ros/humble')]), 'shell': False}
+[3.222872] (-) TimerEvent: {}
+[3.268025] (agv_simulation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_fusion_node.dir/src/pointcloud_fusion_node.cpp.o\x1b[0m\n'}
+[3.268239] (agv_simulation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ground_filter_node.dir/src/ground_filter_node.cpp.o\x1b[0m\n'}
+[3.329485] (-) TimerEvent: {}
+[3.430126] (-) TimerEvent: {}
+[3.545171] (-) TimerEvent: {}
+[3.645744] (-) TimerEvent: {}
+[3.750771] (-) TimerEvent: {}
+[3.852778] (-) TimerEvent: {}
+[3.954658] (-) TimerEvent: {}
+[4.055753] (-) TimerEvent: {}
+[4.156467] (-) TimerEvent: {}
+[4.257195] (-) TimerEvent: {}
+[4.358271] (-) TimerEvent: {}
+[4.458779] (-) TimerEvent: {}
+[4.561468] (-) TimerEvent: {}
+[4.662616] (-) TimerEvent: {}
+[4.763440] (-) TimerEvent: {}
+[4.868135] (-) TimerEvent: {}
+[4.970955] (-) TimerEvent: {}
+[5.072598] (-) TimerEvent: {}
+[5.176978] (-) TimerEvent: {}
+[5.278609] (-) TimerEvent: {}
+[5.380213] (-) TimerEvent: {}
+[5.480815] (-) TimerEvent: {}
+[5.586478] (-) TimerEvent: {}
+[5.690712] (-) TimerEvent: {}
+[5.795251] (-) TimerEvent: {}
+[5.896246] (-) TimerEvent: {}
+[5.997853] (-) TimerEvent: {}
+[6.098180] (-) TimerEvent: {}
+[6.200121] (-) TimerEvent: {}
+[6.300918] (-) TimerEvent: {}
+[6.410268] (-) TimerEvent: {}
+[6.515403] (-) TimerEvent: {}
+[6.620584] (-) TimerEvent: {}
+[6.734334] (-) TimerEvent: {}
+[6.841828] (-) TimerEvent: {}
+[6.946381] (-) TimerEvent: {}
+[7.046751] (-) TimerEvent: {}
+[7.147740] (-) TimerEvent: {}
+[7.252408] (-) TimerEvent: {}
+[7.352911] (-) TimerEvent: {}
+[7.455579] (-) TimerEvent: {}
+[7.556703] (-) TimerEvent: {}
+[7.657111] (-) TimerEvent: {}
+[7.758159] (-) TimerEvent: {}
+[7.860754] (-) TimerEvent: {}
+[7.961187] (-) TimerEvent: {}
+[8.062855] (-) TimerEvent: {}
+[8.165335] (-) TimerEvent: {}
+[8.265724] (-) TimerEvent: {}
+[8.366387] (-) TimerEvent: {}
+[8.466806] (-) TimerEvent: {}
+[8.567238] (-) TimerEvent: {}
+[8.667979] (-) TimerEvent: {}
+[8.769104] (-) TimerEvent: {}
+[8.871141] (-) TimerEvent: {}
+[8.971600] (-) TimerEvent: {}
+[9.072175] (-) TimerEvent: {}
+[9.172598] (-) TimerEvent: {}
+[9.200654] (agv_simulation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lyq/bysj_ws/src/agv_simulation/src/pointcloud_fusion_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PointCloudFusionNode::process_cloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr, std::string)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.201059] (agv_simulation) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lyq/bysj_ws/src/agv_simulation/src/pointcloud_fusion_node.cpp:55:88:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ksensor_type\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.201184] (agv_simulation) StderrLine: {'line': b'   55 |     void process_cloud(const sensor_msgs::msg::PointCloud2::SharedPtr msg, \x1b[01;35m\x1b[Kstd::string sensor_type\x1b[m\x1b[K) {\n'}
+[9.201241] (agv_simulation) StderrLine: {'line': b'      |                                                                            \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.273992] (-) TimerEvent: {}
+[9.374473] (-) TimerEvent: {}
+[9.475923] (-) TimerEvent: {}
+[9.578083] (-) TimerEvent: {}
+[9.680864] (-) TimerEvent: {}
+[9.781725] (-) TimerEvent: {}
+[9.882386] (-) TimerEvent: {}
+[9.982842] (-) TimerEvent: {}
+[10.085468] (-) TimerEvent: {}
+[10.189602] (-) TimerEvent: {}
+[10.303004] (-) TimerEvent: {}
+[10.403530] (-) TimerEvent: {}
+[10.505925] (-) TimerEvent: {}
+[10.607023] (-) TimerEvent: {}
+[10.712865] (-) TimerEvent: {}
+[10.815816] (-) TimerEvent: {}
+[10.921401] (-) TimerEvent: {}
+[11.023027] (-) TimerEvent: {}
+[11.135178] (-) TimerEvent: {}
+[11.240698] (-) TimerEvent: {}
+[11.343953] (-) TimerEvent: {}
+[11.450891] (-) TimerEvent: {}
+[11.555533] (-) TimerEvent: {}
+[11.656526] (-) TimerEvent: {}
+[11.756844] (-) TimerEvent: {}
+[11.864371] (-) TimerEvent: {}
+[11.982134] (-) TimerEvent: {}
+[12.082879] (-) TimerEvent: {}
+[12.185146] (-) TimerEvent: {}
+[12.290520] (-) TimerEvent: {}
+[12.395646] (-) TimerEvent: {}
+[12.498629] (-) TimerEvent: {}
+[12.600516] (-) TimerEvent: {}
+[12.701030] (-) TimerEvent: {}
+[12.801370] (-) TimerEvent: {}
+[12.901997] (-) TimerEvent: {}
+[13.009373] (-) TimerEvent: {}
+[13.113325] (-) TimerEvent: {}
+[13.220522] (-) TimerEvent: {}
+[13.322123] (-) TimerEvent: {}
+[13.436694] (-) TimerEvent: {}
+[13.543438] (-) TimerEvent: {}
+[13.644352] (-) TimerEvent: {}
+[13.745370] (-) TimerEvent: {}
+[13.846781] (-) TimerEvent: {}
+[13.947478] (-) TimerEvent: {}
+[14.049634] (-) TimerEvent: {}
+[14.150483] (-) TimerEvent: {}
+[14.250859] (-) TimerEvent: {}
+[14.351582] (-) TimerEvent: {}
+[14.451999] (-) TimerEvent: {}
+[14.552723] (-) TimerEvent: {}
+[14.653251] (-) TimerEvent: {}
+[14.753705] (-) TimerEvent: {}
+[14.854080] (-) TimerEvent: {}
+[14.954593] (-) TimerEvent: {}
+[15.056274] (-) TimerEvent: {}
+[15.156993] (-) TimerEvent: {}
+[15.257677] (-) TimerEvent: {}
+[15.358487] (-) TimerEvent: {}
+[15.466075] (-) TimerEvent: {}
+[15.566901] (-) TimerEvent: {}
+[15.671786] (-) TimerEvent: {}
+[15.776726] (-) TimerEvent: {}
+[15.879378] (-) TimerEvent: {}
+[15.981056] (-) TimerEvent: {}
+[16.097622] (-) TimerEvent: {}
+[16.199745] (-) TimerEvent: {}
+[16.279522] (agv_simulation) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable ground_filter_node\x1b[0m\n'}
+[16.299907] (-) TimerEvent: {}
+[16.400349] (-) TimerEvent: {}
+[16.502361] (-) TimerEvent: {}
+[16.604098] (-) TimerEvent: {}
+[16.707460] (-) TimerEvent: {}
+[16.808859] (-) TimerEvent: {}
+[16.920819] (-) TimerEvent: {}
+[17.023711] (-) TimerEvent: {}
+[17.127554] (-) TimerEvent: {}
+[17.228170] (-) TimerEvent: {}
+[17.329291] (-) TimerEvent: {}
+[17.435759] (-) TimerEvent: {}
+[17.538553] (-) TimerEvent: {}
+[17.639262] (-) TimerEvent: {}
+[17.684803] (agv_simulation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pointcloud_fusion_node\x1b[0m\n'}
+[17.708726] (agv_simulation) StdoutLine: {'line': b'[100%] Built target ground_filter_node\n'}
+[17.744560] (-) TimerEvent: {}
+[17.845421] (-) TimerEvent: {}
+[17.946387] (-) TimerEvent: {}
+[18.047282] (-) TimerEvent: {}
+[18.148211] (-) TimerEvent: {}
+[18.249165] (-) TimerEvent: {}
+[18.349914] (-) TimerEvent: {}
+[18.451194] (-) TimerEvent: {}
+[18.551850] (-) TimerEvent: {}
+[18.652614] (-) TimerEvent: {}
+[18.669863] (agv_simulation) StdoutLine: {'line': b'[100%] Built target pointcloud_fusion_node\n'}
+[18.714587] (agv_simulation) CommandEnded: {'returncode': 0}
+[18.740200] (agv_simulation) JobProgress: {'identifier': 'agv_simulation', 'progress': 'install'}
+[18.754050] (-) TimerEvent: {}
+[18.763196] (agv_simulation) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lyq/bysj_ws/build/agv_simulation'], 'cwd': '/home/lyq/bysj_ws/build/agv_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('SVGA_VGPU10', '0'), ('USER', 'lyq'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lyq'), ('OLDPWD', '/home/lyq/bysj_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1280'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e48f74c71cd2561997e717ac69b63d42'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lyq/bysj_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lyq'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lyq'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/617:@/tmp/.ICE-unix/1280,unix/617:/tmp/.ICE-unix/1280'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f5bb36b2_8744_4c85_88f2_9c0000f90f9b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.KWODM3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.403'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lyq/bysj_ws/install/agv_simulation:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GALLIUM_DRIVER', 'llvmpipe'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lyq/bysj_ws/build/agv_simulation'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e48f74c71cd2561997e717ac69b63d42'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lyq/bysj_ws/install/agv_simulation:/opt/ros/humble')]), 'shell': False}
+[18.769084] (agv_simulation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.769773] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description\n'}
+[18.770138] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description/inertial_macros.xacro\n'}
+[18.770400] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description/robot.urdf.xacro\n'}
+[18.770680] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch\n'}
+[18.770873] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/sim_perception.launch.py\n'}
+[18.771096] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/agv_nav_full.launch.py\n'}
+[18.771637] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/rsp.launch.py\n'}
+[18.771916] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/worlds\n'}
+[18.772120] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/worlds/simulation.world\n'}
+[18.772356] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config\n'}
+[18.772990] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/mapper_params_online_async.yaml\n'}
+[18.773362] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/slam_config.rviz\n'}
+[18.773985] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/ekf.yaml\n'}
+[18.774271] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/ground_filter_node\n'}
+[18.778858] (agv_simulation) StdoutLine: {'line': b'-- Set runtime path of "/home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/ground_filter_node" to ""\n'}
+[18.779039] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/pointcloud_fusion_node\n'}
+[18.784073] (agv_simulation) StdoutLine: {'line': b'-- Set runtime path of "/home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/pointcloud_fusion_node" to ""\n'}
+[18.784634] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/package_run_dependencies/agv_simulation\n'}
+[18.784770] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/parent_prefix_path/agv_simulation\n'}
+[18.785098] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.sh\n'}
+[18.785507] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.dsv\n'}
+[18.786102] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.sh\n'}
+[18.786213] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.dsv\n'}
+[18.786470] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.bash\n'}
+[18.786740] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.sh\n'}
+[18.787187] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.zsh\n'}
+[18.787293] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.dsv\n'}
+[18.787547] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.dsv\n'}
+[18.788069] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/packages/agv_simulation\n'}
+[18.788181] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig.cmake\n'}
+[18.788416] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig-version.cmake\n'}
+[18.788681] (agv_simulation) StdoutLine: {'line': b'-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.xml\n'}
+[18.791975] (agv_simulation) CommandEnded: {'returncode': 0}
+[18.840793] (agv_simulation) JobEnded: {'identifier': 'agv_simulation', 'rc': 0}
+[18.844088] (-) EventReactorShutdown: {}

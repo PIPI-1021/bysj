@@ -1,0 +1,46 @@
+[0.012s] Invoking command in '/home/lyq/bysj_ws/build/agv_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lyq/bysj_ws/build/agv_simulation -- -j2 -l2
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target ground_filter_node[0m
+[0.090s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_fusion_node[0m
+[0.114s] [ 50%] Built target ground_filter_node
+[0.120s] [ 75%] [32mBuilding CXX object CMakeFiles/pointcloud_fusion_node.dir/src/pointcloud_fusion_node.cpp.o[0m
+[5.476s] [01m[K/home/lyq/bysj_ws/src/agv_simulation/src/pointcloud_fusion_node.cpp:[m[K In member function ‘[01m[Kvoid PointCloudFusionNode::process_cloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr, std::string)[m[K’:
+[5.476s] [01m[K/home/lyq/bysj_ws/src/agv_simulation/src/pointcloud_fusion_node.cpp:55:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksensor_type[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.476s]    55 |     void process_cloud(const sensor_msgs::msg::PointCloud2::SharedPtr msg, [01;35m[Kstd::string sensor_type[m[K) {
+[5.476s]       |                                                                            [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[11.924s] [100%] [32m[1mLinking CXX executable pointcloud_fusion_node[0m
+[12.876s] [100%] Built target pointcloud_fusion_node
+[12.888s] Invoked command in '/home/lyq/bysj_ws/build/agv_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lyq/bysj_ws/build/agv_simulation -- -j2 -l2
+[12.897s] Invoking command in '/home/lyq/bysj_ws/build/agv_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lyq/bysj_ws/build/agv_simulation
+[12.904s] -- Install configuration: ""
+[12.905s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description
+[12.905s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description/robot.urdf.xacro
+[12.905s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch
+[12.905s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/sim_perception.launch.py
+[12.905s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/agv_nav_full.launch.py
+[12.905s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/rsp.launch.py
+[12.906s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/worlds
+[12.906s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/worlds/simulation.world
+[12.906s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config
+[12.906s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/mapper_params_online_async.yaml
+[12.906s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/slam_config.rviz
+[12.906s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/ekf.yaml
+[12.906s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/ground_filter_node
+[12.911s] -- Set runtime path of "/home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/ground_filter_node" to ""
+[12.911s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/pointcloud_fusion_node
+[12.916s] -- Set runtime path of "/home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/pointcloud_fusion_node" to ""
+[12.916s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/package_run_dependencies/agv_simulation
+[12.916s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/parent_prefix_path/agv_simulation
+[12.916s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.sh
+[12.916s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.dsv
+[12.917s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.sh
+[12.917s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.dsv
+[12.917s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.bash
+[12.917s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.sh
+[12.917s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.zsh
+[12.918s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.dsv
+[12.918s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.dsv
+[12.918s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/packages/agv_simulation
+[12.918s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig.cmake
+[12.918s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig-version.cmake
+[12.918s] -- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.xml
+[12.923s] Invoked command in '/home/lyq/bysj_ws/build/agv_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lyq/bysj_ws/build/agv_simulation

@@ -1,0 +1,42 @@
+[35m[1mConsolidate compiler generated dependencies of target ground_filter_node[0m
+[35m[1mConsolidate compiler generated dependencies of target pointcloud_fusion_node[0m
+[ 50%] Built target ground_filter_node
+[ 75%] [32mBuilding CXX object CMakeFiles/pointcloud_fusion_node.dir/src/pointcloud_fusion_node.cpp.o[0m
+[01m[K/home/lyq/bysj_ws/src/agv_simulation/src/pointcloud_fusion_node.cpp:[m[K In member function ‘[01m[Kvoid PointCloudFusionNode::process_cloud(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr, std::string)[m[K’:
+[01m[K/home/lyq/bysj_ws/src/agv_simulation/src/pointcloud_fusion_node.cpp:55:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksensor_type[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   55 |     void process_cloud(const sensor_msgs::msg::PointCloud2::SharedPtr msg, [01;35m[Kstd::string sensor_type[m[K) {
+      |                                                                            [01;35m[K~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable pointcloud_fusion_node[0m
+[100%] Built target pointcloud_fusion_node
+-- Install configuration: ""
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description/robot.urdf.xacro
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/sim_perception.launch.py
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/agv_nav_full.launch.py
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/rsp.launch.py
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/worlds
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/worlds/simulation.world
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/mapper_params_online_async.yaml
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/slam_config.rviz
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/ekf.yaml
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/ground_filter_node
+-- Set runtime path of "/home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/ground_filter_node" to ""
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/pointcloud_fusion_node
+-- Set runtime path of "/home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/pointcloud_fusion_node" to ""
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/package_run_dependencies/agv_simulation
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/parent_prefix_path/agv_simulation
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.sh
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.dsv
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.sh
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.dsv
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.bash
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.sh
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.zsh
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.dsv
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.dsv
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/packages/agv_simulation
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig.cmake
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig-version.cmake
+-- Installing: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.xml

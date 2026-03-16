@@ -1,0 +1,32 @@
+[0.019s] Invoking command in '/home/lyq/bysj_ws/build/agv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lyq/bysj_ws/build/agv_simulation -- -j2 -l2
+[0.190s] [100%] Built target ground_filter_node
+[0.230s] Invoked command in '/home/lyq/bysj_ws/build/agv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lyq/bysj_ws/build/agv_simulation -- -j2 -l2
+[0.257s] Invoking command in '/home/lyq/bysj_ws/build/agv_simulation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lyq/bysj_ws/build/agv_simulation
+[0.273s] -- Install configuration: ""
+[0.275s] -- Execute custom install script
+[0.275s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/description/robot.urdf.xacro
+[0.275s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/agv_nav_full.launch.py
+[0.276s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/rsp.launch.py
+[0.276s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/launch/sim_perception.launch.py
+[0.276s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/worlds/simulation.world
+[0.277s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/ekf.yaml
+[0.277s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config/slam_config.rviz
+[0.277s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/lib/agv_simulation/ground_filter_node
+[0.277s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config//ekf.yaml
+[0.278s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/config//slam_config.rviz
+[0.278s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/package_run_dependencies/agv_simulation
+[0.278s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/parent_prefix_path/agv_simulation
+[0.278s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.sh
+[0.281s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/ament_prefix_path.dsv
+[0.281s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.sh
+[0.282s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/environment/path.dsv
+[0.283s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.bash
+[0.283s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.sh
+[0.283s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.zsh
+[0.284s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/local_setup.dsv
+[0.284s] -- Symlinking: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.dsv
+[0.304s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/ament_index/resource_index/packages/agv_simulation
+[0.304s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig.cmake
+[0.305s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/cmake/agv_simulationConfig-version.cmake
+[0.307s] -- Up-to-date symlink: /home/lyq/bysj_ws/install/agv_simulation/share/agv_simulation/package.xml
+[0.308s] Invoked command in '/home/lyq/bysj_ws/build/agv_simulation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lyq/bysj_ws/build/agv_simulation
