@@ -4,7 +4,7 @@ ekf_filter_node:
     frequency: 30.0
     two_d_mode: true
     print_diagnostics: true
-    debug: true
+    debug: false
     # debug_out_file: /path/to/debug/file   # 如需调试请指定有效路径
 
     # 里程计输入

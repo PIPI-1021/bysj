@@ -1,25 +1,33 @@
 slam_toolbox:
   ros__parameters:
-    # 坐标系定义
-    [cite_start]odom_frame: odom        # 必须与 EKF 配置的 odom_frame 一致 [cite: 13]
+
+    # 1. 坐标系对齐 (必须与你的 EKF 逻辑一致)
+    # 你在 EKF 中设置 world_frame 为 odom，所以这里也要填 odom
+    odom_frame: odom                
     map_frame: map
-    base_frame: base_link
+    base_frame: base_footprint      # 对应 EKF 中的 base_link_frame
     scan_topic: /scan
-    use_sim_time: True
 
-    # 稳定性重写
-    [cite_start]minimum_time_interval: 0.2  # 提高到 5Hz 处理，平衡实时性与精度 [cite: 17]
-    [cite_start]min_score: 0.6               # 略微调高门槛，增强在行人走动时的鲁棒性 [cite: 4]
-    
-    # 距离参数
-    [cite_start]max_laser_range: 10.0        # 信任 10 米内数据，给动态预测留出更多视野 [cite: 15]
-    minimum_travel_distance: 0.2 # 增加位移触发，减少小车静止时的地图抖动
-    minimum_travel_heading: 0.2  # 约 11.4 度
-
-    # 地图精细度
-    [cite_start]resolution: 0.05             # 5厘米分辨率，平衡 AGX Orin 算力 [cite: 10]
+    # 2. 基础运行模式
     mode: mapping
+    use_sim_time: true              # 仿真环境下必须保持开启
 
-    # 闭环检测 (Loop Closure) - 针对大场景室内环境
+    # 3. 扫描匹配与变换参数
+    transform_timeout: 0.2          # 必须略大于 EKF 的发布间隔 (1/30.0 ≈ 0.033s)
+    tf_buffer_duration: 30.0
+    stack_size_to_use: 40000000
+    
+    # 4. 建图精度与雷达参数
+    # 建议根据你小车的雷达量程和分辨率微调
+    minimum_time_interval: 0.06     # 约 15-20Hz 处理频率，建议设为 EKF 频率的一半
+    max_laser_range: 12.0
+    resolution: 0.05                # 5cm 分辨率是 AGV 建图的黄金标准
+    
+    # 5. 循环检测 (Loop Closure)
+    # 这部分确保当你回到原点时，地图能自动对齐误差
     do_loop_closing: true
-    info_graph_publisher_period: 5.0
+    loop_match_minimum_chain_size: 10
+    loop_match_maximum_variance_node_search: 0.75
+    
+    # 6. 地图发布频率
+    map_update_interval: 2.0        # 每2秒更新一次全局显示
