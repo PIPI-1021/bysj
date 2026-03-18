@@ -11,3 +11,4 @@ __pycache__/
 
 # 系统文件
 .DS_Store
+robot_localization_debug.txt

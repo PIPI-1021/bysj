@@ -36,9 +36,13 @@ def generate_launch_description():
     spawn_entity = Node(
         package='gazebo_ros',
         executable='spawn_entity.py',
-        arguments=['-topic', 'robot_description', '-entity', 'my_agv'],
+        arguments=['-topic', 'robot_description', 
+            '-entity', 'my_agv',
+        ],
         output='screen'
     )
+
+
 
     # 5. RViz2 节点
     # 注意：这里我们先不指定具体的 .rviz 配置文件，让它以默认界面打开
@@ -49,7 +53,8 @@ def generate_launch_description():
         output='screen',
         parameters=[{'use_sim_time': True}] # 必须同步仿真时间
     )
-
+    
+ 
     return LaunchDescription([
         node_robot_state_publisher,
         gazebo,

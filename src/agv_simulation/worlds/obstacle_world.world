@@ -33,5 +33,15 @@
         </visual>
       </link>
     </model>
+    
+    <gui>
+      <camera name="user_camera">
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+    </physics>
   </world>
 </sdf>

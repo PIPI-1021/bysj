@@ -35,12 +35,12 @@
   </xacro:macro>
 
   <link name="base_footprint"/>
-
-  <joint name="base_joint" type="fixed">
+  <joint name="base_footprint_joint" type="fixed">
     <parent link="base_footprint"/>
     <child link="base_link"/>
-    <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/> 
   </joint>
+
 
   <link name="base_link">
     <visual>
@@ -166,9 +166,9 @@
       <wheel_separation>${base_width + 2*wheel_ygap}</wheel_separation>
       <wheel_diameter>${2*wheel_radius}</wheel_diameter>
       <publish_odom>true</publish_odom>
-      <publish_odom_tf>true</publish_odom_tf>
+      <publish_odom_tf>false</publish_odom_tf>
       <publish_wheel_tf>true</publish_wheel_tf>
-      <odometry_frame>odom</odometry_frame>
+      <odometry_frame>odom_raw</odometry_frame>
       <robot_base_frame>base_footprint</robot_base_frame>
       <max_wheel_torque>200</max_wheel_torque>
       <max_wheel_acceleration>10.0</max_wheel_acceleration>
