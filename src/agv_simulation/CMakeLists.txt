@@ -40,6 +40,8 @@ install(DIRECTORY
   launch
   worlds
   config
+  scripts
+  maps
   DESTINATION share/${PROJECT_NAME}
 )
 
@@ -50,4 +52,9 @@ install(TARGETS
   DESTINATION lib/${PROJECT_NAME}
 )
 
+# 安装 Python 脚本到 lib 目录下，这样才能通过 ros2 run 启动
+install(PROGRAMS
+  scripts/auto_circle_drive.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 ament_package()
