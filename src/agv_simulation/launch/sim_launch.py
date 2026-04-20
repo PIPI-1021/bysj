@@ -25,7 +25,7 @@ def generate_launch_description():
     )
 
     # 3. Gazebo 启动文件
-    world_path = os.path.join(pkg_path, 'worlds', 'world2.world')
+    world_path = os.path.join(pkg_path, 'worlds', 'world1.world')
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
