@@ -55,6 +55,7 @@ install(TARGETS
 # 安装 Python 脚本到 lib 目录下，这样才能通过 ros2 run 启动
 install(PROGRAMS
   scripts/auto_circle_drive.py
+  scripts/moving_obstacle.py
   DESTINATION lib/${PROJECT_NAME}
 )
 ament_package()

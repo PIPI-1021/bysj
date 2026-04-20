@@ -1,0 +1,23 @@
+slam_toolbox:
+  ros__parameters:
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_footprint
+    scan_topic: /scan           # 根据实物修改
+
+    mode: mapping
+    use_sim_time: false         # 实物关键修改
+
+    transform_timeout: 0.2
+    tf_buffer_duration: 30.0
+    stack_size_to_use: 40000000
+
+    minimum_time_interval: 0.06   # 可根据激光雷达频率微调
+    max_laser_range: 12.0         # 根据实物雷达量程修改
+    resolution: 0.05
+
+    do_loop_closing: true
+    loop_match_minimum_chain_size: 10
+    loop_match_maximum_variance_node_search: 0.75
+
+    map_update_interval: 2.0

@@ -24,7 +24,7 @@ def generate_launch_description():
         description='Full path to the ROS2 parameters file to use for the slam_toolbox node')
 
     # 3. 启动 slam_toolbox 节点
-    # 注意：它会发布 map -> odom 的 TF 变换
+    # 发布 map -> odom 的 TF 变换
     start_slam_toolbox_node = Node(
         parameters=[
             slam_params_file,

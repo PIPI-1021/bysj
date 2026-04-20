@@ -25,11 +25,11 @@ def generate_launch_description():
     )
 
     # 3. Gazebo 启动文件
-    world_path = os.path.join(pkg_path, 'worlds', 'obstacle_world.world')
+    world_path = os.path.join(pkg_path, 'worlds', 'world2.world')
     gazebo = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
-        launch_arguments={'world': world_path}.items() # 这里指定 world
+        launch_arguments={'world': world_path}.items() 
     )
     
     # 4. Spawn Entity 节点
@@ -38,20 +38,22 @@ def generate_launch_description():
         executable='spawn_entity.py',
         arguments=['-topic', 'robot_description', 
             '-entity', 'my_agv',
+            '-x', '1.0',    # 设置初始 X 坐标
+            '-y', '1.0',    # 设置初始 Y 坐标
+            '-z', '0.1',    # 设置高度，防止轮子陷在地里
+            '-Y', '0.0'     # 设置初始朝向（弧度，0.0 表示朝向 X 轴正方向）
         ],
         output='screen'
     )
 
 
-
     # 5. RViz2 节点
-    # 注意：这里我们先不指定具体的 .rviz 配置文件，让它以默认界面打开
     node_rviz = Node(
         package='rviz2',
         executable='rviz2',
         name='rviz2',
         output='screen',
-        parameters=[{'use_sim_time': True}] # 必须同步仿真时间
+        parameters=[{'use_sim_time': True}] # 同步仿真时间
     )
     
  

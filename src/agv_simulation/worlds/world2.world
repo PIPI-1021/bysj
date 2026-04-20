@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="indoor_standard_world">
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <model name='enclosure'>
+      <static>1</static>
+      <link name='link'>
+        <visual name='north'><pose>7.5 12 1 0 0 0</pose><geometry><box><size>15 0.2 2</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+        <collision name='north_c'><pose>7.5 12 1 0 0 0</pose><geometry><box><size>15 0.2 2</size></box></geometry></collision>
+        
+        <visual name='south'><pose>7.5 0 1 0 0 0</pose><geometry><box><size>15 0.2 2</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+        <collision name='south_c'><pose>7.5 0 1 0 0 0</pose><geometry><box><size>15 0.2 2</size></box></geometry></collision>
+        
+        <visual name='west'><pose>0 6 1 0 0 1.57</pose><geometry><box><size>12 0.2 2</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+        <collision name='west_c'><pose>0 6 1 0 0 1.57</pose><geometry><box><size>12 0.2 2</size></box></geometry></collision>
+        
+        <visual name='east'><pose>15 6 1 0 0 1.57</pose><geometry><box><size>12 0.2 2</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+        <collision name='east_c'><pose>15 6 1 0 0 1.57</pose><geometry><box><size>12 0.2 2</size></box></geometry></collision>
+      </link>
+    </model>
+
+    <model name='inner_L_wall'>
+      <static>1</static>
+      <pose>2.5 2.5 0 0 0 0</pose>
+      <link name='link'>
+        <visual name='v1'><pose>5 0 1 0 0 0</pose><geometry><box><size>10 0.2 2</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+        <collision name='c1'><pose>5 0 1 0 0 0</pose><geometry><box><size>10 0.2 2</size></box></geometry></collision>
+        
+        <visual name='v2'><pose>0 3.5 1 0 0 1.57</pose><geometry><box><size>7 0.2 2</size></box></geometry>
+          <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Grey</name></script></material></visual>
+        <collision name='c2'><pose>0 3.5 1 0 0 1.57</pose><geometry><box><size>7 0.2 2</size></box></geometry></collision>
+      </link>
+    </model>
+
+    <model name='corner_pole'>
+      <static>1</static>
+      <pose>2.5 2.5 0 0 0 0</pose>
+      <link name='pole'><pose>0 0 0.5 0 0 0</pose><visual name='v'><geometry><cylinder><radius>0.12</radius><length>1</length></cylinder></geometry>
+        <material><script><uri>file://media/materials/scripts/gazebo.material</uri><name>Gazebo/Yellow</name></script></material></visual>
+        <collision name='c'><geometry><cylinder><radius>0.12</radius><length>1</length></cylinder></geometry></collision>
+      </link>
+    </model>
+    <actor name="animated_human">
+      <link name="link">
+        <collision name="collision">
+          <pose>0 0 0.9 0 0 0</pose> <geometry>
+            <box>
+              <size>0.45 0.45 1.8</size> </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>model://walker/meshes/walker.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+
+      <script>
+        <loop>true</loop>
+        <delay_start>5.0</delay_start>
+        <auto_start>true</auto_start>
+        <trajectory id="0" type="walking">
+          <waypoint>
+            <time>0</time>
+            <pose>10.0 0.5 0 0 0 1.57</pose>
+          </waypoint>
+          <waypoint>
+            <time>3</time>
+            <pose>10.0 2.5 0 0 0 1.57</pose>
+          </waypoint>
+        </trajectory>
+      </script>
+    </actor>
+  </world>
+</sdf>

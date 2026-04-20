@@ -11,7 +11,7 @@ def generate_launch_description():
     pkg_share = get_package_share_directory('agv_simulation')
 
     # 2. 设定文件路径
-    default_map_path = os.path.join(pkg_share, 'maps', 'my_map.yaml')
+    default_map_path = os.path.join(pkg_share, 'maps', 'map1.yaml')
     default_params_path = os.path.join(pkg_share, 'config', 'nav2_params.yaml')
 
     # 3. 定义 Launch 参数（方便在命令行临时修改）
@@ -43,7 +43,8 @@ def generate_launch_description():
             name='map_server',
             output='screen',
             parameters=[{'yaml_filename': map_yaml_file},
-                        {'use_sim_time': use_sim_time}]
+                        {'use_sim_time': use_sim_time}],
+            remappings=[('/map', '/map_static')] 
         ),
 
         # AMCL - 定位

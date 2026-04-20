@@ -1,6 +1,12 @@
 amcl:
   ros__parameters:
     use_sim_time: True
+    set_initial_pose: True      # 强制 AMCL 使用这里定义的初始位姿
+    initial_pose:
+      x: 1.0                    # 必须与 Launch 文件中的 -x 一致
+      y: 1.0                    # 必须与 Launch 文件中的 -y 一致
+      z: 0.0
+      yaw: 0.0                  # 必须与 Launch 文件中的 -Y 一致
     alpha1: 0.2
     alpha2: 0.2
     alpha3: 0.2
@@ -44,15 +50,15 @@ bt_navigator:
     global_frame: map
     robot_base_frame: base_link
     odom_frame: odom
+    # 确保使用带重规划的BT树，应对动态障碍物阻塞路径的情况
     default_bt_xml_filename: "navigate_to_pose_w_replanning_and_recovery.xml"
     bt_loop_duration: 10
     default_server_timeout: 20
 
-
 controller_server:
   ros__parameters:
     use_sim_time: True
-    controller_frequency: 20.0
+    controller_frequency: 20.0 # 保持高频控制
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.5
     min_theta_velocity_threshold: 0.001
@@ -75,7 +81,7 @@ controller_server:
       debug_trajectory_details: True
       min_vel_x: 0.0
       max_vel_x: 0.26
-      max_vel_y: 0.0
+      max_vel_y: 0.0 # 差速轮固定为0
       max_vel_theta: 1.0
       min_speed_xy: 0.0
       max_speed_xy: 0.26
@@ -86,15 +92,18 @@ controller_server:
       decel_lim_x: -2.5
       decel_lim_y: 0.0
       decel_lim_theta: -3.2
-      vx_samples: 20
-      vy_samples: 5
-      vtheta_samples: 20
-      sim_time: 1.7
+      # --- 动态避障修改点 1: 增加速度空间采样密度 ---
+      vx_samples: 40       # 增加采样，从20提升到40，路径搜索更细腻
+      vy_samples: 1        # 差速轮y轴采样设为1
+      vtheta_samples: 40   # 增加角速度采样
+      # --- 动态避障修改点 2: 调整模拟预判时间 ---
+      sim_time: 1.5        # 略微减小模拟时间，让机器人对当前的障碍物更敏感
       linear_granularity: 0.05
       angular_granularity: 0.025
       transform_tolerance: 0.2
       critics: ["RotateToGoal", "Oscillation", "BaseObstacle", "GoalAlign", "PathAlign", "PathDist", "GoalDist"]
-      BaseObstacle.scale: 0.02
+      # --- 动态避障修改点 3: 强化避障权重 ---
+      BaseObstacle.scale: 0.05 # 增加权重（原0.02），让机器人更怕撞到动态物体
       PathAlign.scale: 32.0
       PathAlign.forward_point_distance: 0.1
       GoalAlign.scale: 24.0
@@ -110,7 +119,7 @@ planner_server:
     GridBased:
       plugin: "nav2_navfn_planner/NavfnPlanner"
       tolerance: 0.5
-      use_astar: True  # 启用 A* 算法
+      use_astar: True
       allow_unknown: true
 
 behavior_server:
@@ -147,6 +156,7 @@ global_costmap:
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True
+        map_topic: "/map_static"  # 强制订阅静态图
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
@@ -157,6 +167,8 @@ global_costmap:
           clearing: True
           marking: True
           data_type: "LaserScan"
+          raytrace_max_range: 3.0 # 增加光线追踪清理距离
+          raytrace_min_range: 0.0
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
         cost_scaling_factor: 3.0
@@ -165,8 +177,9 @@ global_costmap:
 local_costmap:
   local_costmap:
     ros__parameters:
-      update_frequency: 5.0
-      publish_frequency: 2.0
+      # --- 动态避障修改点 4: 提高局部地图刷新频率 ---
+      update_frequency: 10.0  # 提高到10Hz，确保障碍物移动后地图立即更新
+      publish_frequency: 5.0
       global_frame: odom
       robot_base_frame: base_link
       use_sim_time: True
@@ -179,6 +192,7 @@ local_costmap:
       static_layer:
         plugin: "nav2_costmap_2d::StaticLayer"
         map_subscribe_transient_local: True
+        map_topic: "/map"   # 订阅 slam_toolbox 默认发布的实时图
       obstacle_layer:
         plugin: "nav2_costmap_2d::ObstacleLayer"
         enabled: True
@@ -186,10 +200,16 @@ local_costmap:
         scan:
           topic: /scan
           max_obstacle_height: 2.0
-          clearing: True
+          clearing: True   # 必须为True，实时清理动态障碍物留下的残影
           marking: True
           data_type: "LaserScan"
+          # --- 动态避障修改点 5: 优化清理范围 ---
+          raytrace_max_range: 3.0 
+          raytrace_min_range: 0.0
+          obstacle_max_range: 2.5
+          obstacle_min_range: 0.0
       inflation_layer:
         plugin: "nav2_costmap_2d::InflationLayer"
-        cost_scaling_factor: 3.0
-        inflation_radius: 0.55
+        # --- 动态避障修改点 6: 调整膨胀层，平衡避障与通行速度 ---
+        cost_scaling_factor: 2.5 # 稍微调低，让代价下降更平缓，避障更早触发
+        inflation_radius: 0.65   # 增加膨胀半径，提升安全冗余

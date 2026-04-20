@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="wide_corridor_map">
+      <static>true</static>
+      <link name="link">
+        
+        <visual name="out_n">
+          <pose>0 3.5 0.5 0 0 0</pose>
+          <geometry><box><size>10 0.1 1</size></box></geometry>
+        </visual>
+        <visual name="out_s">
+          <pose>0 -3.5 0.5 0 0 0</pose>
+          <geometry><box><size>10 0.1 1</size></box></geometry>
+        </visual>
+        <visual name="out_w">
+          <pose>-5 0 0.5 0 0 0</pose>
+          <geometry><box><size>0.1 7 1</size></box></geometry>
+        </visual>
+        <visual name="out_e">
+          <pose>5 0 0.5 0 0 0</pose>
+          <geometry><box><size>0.1 7 1</size></box></geometry>
+        </visual>
+
+        <visual name="inner_wall_1">
+          <pose>0 -2.2 0.5 0 0 0</pose>
+          <geometry><box><size>8 0.1 1</size></box></geometry>
+        </visual>
+        
+        <visual name="inner_wall_2">
+          <pose>0 0.5 0.5 0 0 0</pose>
+          <geometry><box><size>8 0.1 1</size></box></geometry>
+        </visual>
+
+        <collision name="c1"><pose>0 3.5 0.5 0 0 0</pose><geometry><box><size>10 0.1 1</size></box></geometry></collision>
+        <collision name="c2"><pose>0 -3.5 0.5 0 0 0</pose><geometry><box><size>10 0.1 1</size></box></geometry></collision>
+        <collision name="c3"><pose>-5 0 0.5 0 0 0</pose><geometry><box><size>0.1 7 1</size></box></geometry></collision>
+        <collision name="c4"><pose>5 0 0.5 0 0 0</pose><geometry><box><size>0.1 7 1</size></box></geometry></collision>
+        <collision name="c5"><pose>0 -2.2 0.5 0 0 0</pose><geometry><box><size>8 0.1 1</size></box></geometry></collision>
+        <collision name="c6"><pose>0 0.5 0.5 0 0 0</pose><geometry><box><size>8 0.1 1</size></box></geometry></collision>
+      </link>
+    </model>
+
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+  </world>
+</sdf>

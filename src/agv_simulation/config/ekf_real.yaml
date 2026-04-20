@@ -1,0 +1,38 @@
+ekf_filter_node:
+  ros__parameters:
+    frequency: 20.0                      # 实物频率可稍低
+    two_d_mode: true
+    print_diagnostics: true
+    debug: false
+
+    # 里程计（实际话题可能不同）
+    odom0: /wheel_odom                   # 改为实物话题
+    odom0_config: [true, true, false,
+                   false, false, true,
+                   true, true, false,
+                   false, false, true,
+                   false, false, false]
+    odom0_queue_size: 10
+    odom0_nodelay: true
+    odom0_differential: false
+    odom0_relative: true
+
+    # IMU（如果实物有）
+    imu0: /imu/data                      # 改为实物话题
+    imu0_config: [false, false, false,
+                  true, true, true,
+                  false, false, false,
+                  true, true, true,
+                  false, false, false]
+    imu0_queue_size: 10
+    imu0_nodelay: true
+    imu0_differential: false
+    imu0_relative: true
+    imu0_remove_gravitational_acceleration: true
+
+    # 坐标系（确认与 URDF 一致）
+    odom_frame: odom
+    base_link_frame: base_link           # 如果实物 base 叫 base_link
+    world_frame: odom
+
+    publish_tf: true

@@ -1,3 +1,4 @@
+#slam_toolbox 参数配置文件，用于配置在线异步 SLAM 建图节点的运行参数
 slam_toolbox:
   ros__parameters:
 
